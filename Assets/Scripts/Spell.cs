@@ -1,20 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Spell : MonoBehaviour
 {
-	public Castable castable;
-
-	void Awake()
-	{
-		castable = (Castable) this;
-	}
-
 	void Update()
 	{
-		if (Input.GetMouseButtonUp(0))
-			castable.Cast();
+		try
+		{
+			if (Input.GetMouseButtonUp(0))
+				((CastableSpell) this).Cast();
+		}
+		catch (InvalidCastException e) { } // Ignore, UNITY is just kinda bald
 	}
 
 	void FixedUpdate()

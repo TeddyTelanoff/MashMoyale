@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lightning : Spell, Castable
+public class Lightning : Spell, CastableSpell
 {
 	readonly List<Tower> hits = new List<Tower>();
 
 	public float totalDamage;
+	public float minDamage;
 
 	public void Cast()
 	{
 		foreach (Tower hit in hits)
-			hit.hp -= totalDamage / hits.Count;
+			hit.hp -= Mathf.Max(totalDamage / hits.Count, minDamage);
 		Destroy(gameObject);
 	}
 

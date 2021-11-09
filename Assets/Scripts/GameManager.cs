@@ -1,5 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+
+using NaughtyAttributes;
+
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -14,6 +17,8 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
+	public Castle[] castles;
+	[Required]
 	public GameObject lightningPrefab;
 
 	void Awake() =>

@@ -24,6 +24,13 @@ public class Tower : MonoBehaviour
 		}
     }
 
+    public float attackSpeed;
+
     [SerializeField]
     private float _health;
+
+    void FindTarget()
+	{
+
+	}
 }
