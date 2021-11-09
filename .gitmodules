@@ -1,0 +1,4 @@
+[submodule "NaughtyAttributes"]
+	path = NaughtyAttributes
+	url = https://github.com/dbrizov/NaughtyAttributes
+	branch = v2
