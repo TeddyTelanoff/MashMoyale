@@ -323,7 +323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpText: {fileID: 1488063087}
   maxHp: 1000
-  _hp: 1000
+  _health: 1000
 --- !u!4 &17975427
 Transform:
   m_ObjectHideFlags: 0
@@ -482,7 +482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpText: {fileID: 10328971}
   maxHp: 2000
-  _hp: 2000
+  _health: 2000
 --- !u!1 &525563330
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,7 +881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpText: {fileID: 2071031730}
   maxHp: 1000
-  _hp: 1000
+  _health: 1000
 --- !u!4 &1086292990
 Transform:
   m_ObjectHideFlags: 0
